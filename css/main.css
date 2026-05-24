@@ -1,362 +1,328 @@
-body {
-	margin: 0;
-	background-color: rgb(10, 15, 25);
-	text-align: left;
-	overflow: hidden;
-}
+	body {
+		margin: 0;
+		background-color: rgb(10, 15, 25);
+		text-align: left;
+		overflow: hidden;
+	}
+	section {
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 1440px; 
+		height: 810px; 
+		margin-left: -720px; 
+		margin-top: -405px; 
+		transform-origin: 50% 50%;
+		z-index: 999;
+		overflow: hidden;
+	}
+	video {
+		width: 100%;
+		height: auto;
+	}
+	button {
 
-section {
+		width: 20rem;
+		height: 3rem;
 
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 1440px;
-	height: 810px;
-	margin-left: -720px;
-	margin-top: -405px;
-	transform-origin: 50% 50%;
-	z-index: 999;
-	overflow: hidden;
-}
+		color: #ededed;
+		background-color: #81a5ba;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 1.7rem;
+		font-family: "Share Tech Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-weight: 600;
+		padding: 8px 25px;
+		border: 1px solid rgba(0,0,0,0.3);
+		border-bottom-width: 3px;
+		z-index: 1001;
+	}
+	.next {
+		position: absolute;
+		bottom: 35px;
+		right: 35px;
+	}
+	.prev {
+		position: absolute;
+		bottom: 35px;
+		left: 35px;
+	}
+	.nextpageone {
+		position: absolute;
+		top: 575px;
+		left: 335px;
+	}
+	span {
+		color: indianred;
+	}
 
-video {
-	width: 100%;
-	height: auto;
-}
+	p {
+		font-size: .9rem;
+		color: #b1b1b1;
+	}
 
-button {
+	/* common content styles */
+	div {
+		position: absolute;
+		opacity: 0;
+		z-index: 1000;
+		padding: 2px;
+	}
 
-	width: 20rem;
-	height: 3rem;
+	/* SCREEN 2 */
+	#maintitle2 {
+		top: 498px;
+		right: 80px;
+		width: 15rem;
+	}
 
-	color: #ededed;
-	background-color: #81a5ba;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 1.7rem;
-	font-family: "Share Tech Mono", monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-weight: 600;
-	padding: 8px 25px;
-	border: 1px solid rgba(0,0,0,0.3);
-	border-bottom-width: 3px;
-	z-index: 1001;
-}
+	#maintitle2 img {
+		width: 18rem;
+	}
 
-.next {
-	position: absolute;
-	bottom: 35px;
-	right: 35px;
-}
+	#bodycopy2 {
+		top: 125px;
+		right: 148px;
+		width: 583px;
+		font-family: "Share Tech Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 28px;
+		line-height: 1.5;
+		color: #fff;
+		white-space: pre-line;
+	}
+	#othe img{
+		position: absolute;
+		width: 10rem;
+		top: -34rem;
+		left: 20.4rem;
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+	}
 
-.prev {
-	position: absolute;
-	bottom: 35px;
-	left: 35px;
-}
 
-.nextpageone {
-	position: absolute;
-	top: 575px;
-	left: 335px;
-}
+	/* SCREEN 3 */
+	#maintitle3 {
+		top: 102px;
+		left: 138px;
+		font-family: "Share Tech Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 64px;
+		color: #63c2fa;
+		text-transform: uppercase;
+		letter-spacing: 14px;
+		text-shadow: 2px 2px #777;
+	}
+	#bodycopy3 {
+		top: 168px;
+		left: 148px;
+		width: 633px;
+		
+		font-family: "Share Tech Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 1.5;
+		color: #fff;
+	}
+	#other3 {
+		top: 160px;
+		left: 100px;
+	}
 
-span {
-	color: indianred;
-}
+	h1 {
+		color: #b4b4b4;
+		font-family: "Share Tech Mono", monospace;
+		letter-spacing: 10px;
+		font-size: 2rem;
+		font-weight: 800;
+		line-height: 1.4;
+	}
 
-p {
-	font-size: .9rem;
-	color: #b1b1b1;
-}
+	.statue {
+		position: absolute;
+		left: 9rem;
+		top: 7.4rem;
+		font-size: 1.8rem;
+		color: #b1b1b1;
+	}
+	.seed {
+		position: absolute;
+		right: 18.1rem;
+		top: 20.7rem;
+		text-shadow: indianred 2px 5px;
+	}
+	.missing {
+		position: absolute;
+		right: 13rem;
+		top: 28.5rem;
+		text-shadow: indianred 2px 5px;
+	}
+	.bullet {
+		position: absolute;
+		right: 13rem;
+		top: 36.1rem;
+		text-shadow: indianred 2px 5px;
+	}
 
-/* common content styles */
-div {
-	position: absolute;
-	opacity: 0;
-	z-index: 1000;
-	padding: 2px;
-}
 
-/* SCREEN 2 */
-#maintitle2 {
-	top: 498px;
-	right: 80px;
-	width: 15rem;
-}
+	.arm {
+		position: absolute;
+		width: 3.7rem;
+		bottom: 19.3rem;
+		left: 36.8rem;
+		z-index: 10000; 
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		cursor: pointer;
+	}
+	.bel {
+		position: absolute;
+		width: 1.7rem;
+		bottom: 24.9rem;
+		left: 41.8rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
+	.eye {
+		position: absolute;
+		width: .7rem;
+		bottom: 41.0rem;
+		left: 41.8rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
 
-#maintitle2 img {
-	width: 18rem;
-}
+	.inst {
+		position: absolute;
+		z-index: 999;
+		font-size: 1rem;
+		font-family: "Share Tech Mono", monospace;
+		top: 3rem;
+		left: 3.5rem
+	}
 
-#bodycopy2 {
-	top: 125px;
-	right: 148px;
-	width: 583px;
-	font-family: "Share Tech Mono", monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 28px;
-	line-height: 1.5;
-	color: #fff;
-	white-space: pre-line;
-}
 
-#othe img{
-	position: absolute;
-	width: 10rem;
-	top: -34rem;
-	left: 20.4rem;
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-}
+	.arm-text {
+		width: 350px;
+		position: absolute;
+		top: 15rem;
+		left: 7rem;
+		display: none;
+		font-size: 1.0rem;
+		font-family: "Share Tech Mono", monospace;
+		text-align: justify;
+		text-align-last: left;
+		line-height: 1.2;
+	}
+	.bel-text {
+		width: 350px;
+		position: absolute;
+		top: 15rem;
+		left: 7rem;
+		display: none;
+		font-size: 1.0rem;
+		font-family: "Share Tech Mono", monospace;
+		text-align: justify;
+		text-align-last: left;
+		line-height: 1.2;
 
-/* SCREEN 3 */
-#maintitle3 {
-	top: 102px;
-	left: 138px;
-	font-family: "Share Tech Mono", monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 64px;
-	color: #63c2fa;
-	text-transform: uppercase;
-	letter-spacing: 14px;
-	text-shadow: 2px 2px #777;
-}
+	}
+	.eye-text {
+		width: 350px;
+		position: absolute;
+		top: 15rem;
+		left: 7rem;
+		display: none;
+		font-size: 1.0rem;
+		font-family: "Share Tech Mono", monospace;
+		text-align: justify;
+		text-align-last: left;
+		line-height: 1.2;
 
-#bodycopy3 {
-	top: 168px;
-	left: 148px;
-	width: 633px;
+	}
 
-	font-family: "Share Tech Mono", monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 24px;
-	line-height: 1.5;
-	color: #fff;
-}
+	/* SCREEN 4 */
+	#maintitle4 {
+		top: 102px;
+		left: 138px;
+		font-family: "Share Tech Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 64px;
+		color: #63c2fa;
+		text-transform: uppercase;
+		letter-spacing: 14px;
+		text-shadow: 2px 2px #777;
+	}
+	#bodycopy4 {
+		position: absolute;
+		width: 1440px; 
+		height: 810px;
+	}
 
-#other3 {
-	top: 160px;
-	left: 100px;
-}
+	.back {
+		position: absolute;
+		width: 14.7rem;
+		bottom: 9.3rem;
+		left: 10.8rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
+	.blue {
+		position: absolute;
+		width:8.7rem;
+		bottom: 11rem;
+		left: 13.8rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
+	.red {
+		position: absolute;
+		width: 8.7rem;
+		bottom: 11rem;
+		left: 13.8rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
+	.cover {
+		position: absolute;
+		width: 14.7rem;
+		bottom: 9rem;
+		left: 11rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
+	.gif {
+		position: absolute;
+		width: 34.7rem;
+		bottom: 33rem;
+		right: 15.3rem;
+		z-index: 10000; 
+		cursor: pointer;
+	}
+	#other4 {
+		top: 325px;
+		right: 99px;	
+		z-index: 888;
+	}
+	#other4 video {
+		z-index: 999;
+		width: 695px;
 
-h1 {
-	color: #b4b4b4;
-	font-family: "Share Tech Mono", monospace;
-	letter-spacing: 10px;
-	font-size: 2rem;
-	font-weight: 800;
-	line-height: 1.4;
-}
+	}
 
-.statue {
-	position: absolute;
-	left: 9rem;
-	top: 7.4rem;
-	font-size: 1.8rem;
-	color: #b1b1b1;
-}
 
-.seed {
-	position: absolute;
-	right: 18.1rem;
-	top: 20.7rem;
-	text-shadow: indianred 2px 5px;
-}
+	#bgbg {
+		position: absolute;
+		width: 1440px;
+		height: 810px; 
+		z-index: 0;
 
-.missing {
-	position: absolute;
-	right: 13rem;
-	top: 28.5rem;
-	text-shadow: indianred 2px 5px;
-}
-
-.bullet {
-	position: absolute;
-	right: 13rem;
-	top: 36.1rem;
-	text-shadow: indianred 2px 5px;
-}
-
-.arm {
-	position: absolute;
-	width: 3.7rem;
-	bottom: 19.3rem;
-	left: 36.8rem;
-	z-index: 10000;
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	cursor: pointer;
-}
-
-.bel {
-	position: absolute;
-	width: 1.7rem;
-	bottom: 24.9rem;
-	left: 41.8rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-.eye {
-	position: absolute;
-	width: .7rem;
-	bottom: 41.0rem;
-	left: 41.8rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-.inst {
-	position: absolute;
-	z-index: 999;
-	font-size: 1rem;
-	font-family: "Share Tech Mono", monospace;
-	top: 3rem;
-	left: 3.5rem
-}
-
-.arm-text {
-	width: 350px;
-	position: absolute;
-	top: 15rem;
-	left: 7rem;
-	display: none;
-	font-size: 1.0rem;
-	font-family: "Share Tech Mono", monospace;
-	text-align: justify;
-	text-align-last: left;
-	line-height: 1.2;
-}
-
-.bel-text {
-	width: 350px;
-	position: absolute;
-	top: 15rem;
-	left: 7rem;
-	display: none;
-	font-size: 1.0rem;
-	font-family: "Share Tech Mono", monospace;
-	text-align: justify;
-	text-align-last: left;
-	line-height: 1.2;
-}
-
-.eye-text {
-	width: 350px;
-	position: absolute;
-	top: 15rem;
-	left: 7rem;
-	display: none;
-	font-size: 1.0rem;
-	font-family: "Share Tech Mono", monospace;
-	text-align: justify;
-	text-align-last: left;
-	line-height: 1.2;
-}
-
-/* SCREEN 4 */
-#maintitle4 {
-	top: 102px;
-	left: 138px;
-	font-family: "Share Tech Mono", monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 64px;
-	color: #63c2fa;
-	text-transform: uppercase;
-	letter-spacing: 14px;
-	text-shadow: 2px 2px #777;
-}
-
-#bodycopy4 {
-	position: absolute;
-	width: 1440px;
-	height: 810px;
-}
-
-.back {
-	position: absolute;
-	width: 14.7rem;
-	bottom: 9.3rem;
-	left: 10.8rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-.blue {
-	position: absolute;
-	width:8.7rem;
-	bottom: 11rem;
-	left: 13.8rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-.red {
-	position: absolute;
-	width: 8.7rem;
-	bottom: 11rem;
-	left: 13.8rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-.cover {
-	position: absolute;
-	width: 14.7rem;
-	bottom: 9rem;
-	left: 11rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-.gif {
-	position: absolute;
-	width: 34.7rem;
-	bottom: 33rem;
-	right: 15.3rem;
-	z-index: 10000;
-	cursor: pointer;
-}
-
-#other4 {
-	top: 325px;
-	right: 99px;
-	z-index: 888;
-}
-
-#other4 video {
-	z-index: 999;
-	width: 695px;
-}
-
-#bgbg {
-	position: absolute;
-	width: 1440px;
-	height: 810px;
-	z-index: 0;
-}
-
-/* SITE SCALE FIX */
-#site-wrapper{
-	transform: scale(0.72);
-	transform-origin: top left;
-	width: 138%;
-	height: 138vh;
-}
-
-html, body{
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-#section1 {
-    display: block;
-}
+	}
