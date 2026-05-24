@@ -6,7 +6,7 @@ body {
 }
 
 section {
-	display: none;
+
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -355,4 +355,8 @@ html, body{
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
+}
+
+#section1 {
+    display: block;
 }
